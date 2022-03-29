@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Saira:wght@300&display=swap');
+
+.bg-dark {
+  background: #000 !important;
+}
+
+.mf {
+  color: #ffffff90;
+  font-size: 1.2rem;
+  font-family: 'Saira', sans-serif;
+}
+
+.mf:hover {
+  letter-spacing: 1px;
+  position: relative;
+  letter-spacing: 0.1em;
+  color: #9dfd99;
+}
+
+.mf:hover::after {
+  position: absolute;
+  content: "";
+  width: 1.5rem;
+  height: 0.1875rem;
+  left: 0.5rem;
+  top: 2.56rem;
+  background-color: #1d4e11;
+}
+
+.w-18 {
+  width: 1.8em;
+  padding: 0;
+  margin: 0;
+}
