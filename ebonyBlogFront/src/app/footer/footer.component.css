@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Saira:wght@300&display=swap');
+
+
+/* ================= CORES =================
+:root {
+  --verde: #1d4e11;
+  --verdeClaro: #9dfd99;
+  --verdeFolha: #5eff00;
+  --preto: #000;
+  --pretoFosco: #101010;
+  --branco: #FFF;
+  --cinza: #ffffff90;
+  --cinzaEscuro: #ffffff20;
+  --cinzaClaro: #27272790;
+}
+
+ ================= FONTES =================
+
+:root {
+    --fontBody: 'Saira', sans-serif;
+    --fontMenu: 'Arimo', sans-serif;
+    --tamanhoh1: 5.5rem;
+    --tamanhoh2: 2.8rem;
+    --fontNormal: 0.93rem;
+    --fontPequena: 0.81rem;
+    --fontGrande: 1.4rem;
+  }
+*/
+
+* {
+  text-decoration: none;
+}
+
+.bg-dark {
+  background-color: #101010 !important;
+}
+
+.border-bottom {
+  border-bottom: 0.01em solid #ffffff90 !important;
+  box-shadow: 0 0 1em #9dfd99;
+}
+
+.border-top {
+  border-top: 0.01em solid #ffffff90 !important ;
+}
+
+
+.c-verde {
+    color: #5eff00;
+}
+
+.footer-font {
+    color: #ffffff90;
+    font-size: 1.1em;
+    font-weight: 500;
+    font-family: 'Saira', sans-serif;
+}
+
+.footer-font-t {
+    color: #ffffff90;
+    font-size: 1.3em;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.footer-font-t:hover {
+    color: #9dfd99;
+    letter-spacing: 1px;
+}
+
+.footer-font:hover {
+  color: #9dfd99;
+  text-decoration: none !important;
+}
+
+
+.footer-bg {
+    background-color: #27272790;
+}
+
+.footer-icones:hover {
+    color: #9dfd99;
+}
+
+
