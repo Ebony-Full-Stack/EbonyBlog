@@ -1,101 +1,141 @@
 /* Please ❤ this if you like it! */
-
+@import url('https://fonts.googleapis.com/css2?family=Saira:wght@300&display=swap');
 @import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900");
 
+
+/* ================= CORES =================
+:root {
+  --verde: #1d4e11;
+  --verdeClaro: #9dfd99;
+  --verdeFolha: #5eff00;
+  --preto: #000;
+  --pretoFosco: #101010;
+  --branco: #FFF;
+  --cinza: #ffffff90;
+  --cinzaEscuro: #ffffff20;
+  --cinzaClaro: #27272790;
+}
+
+ ================= FONTES =================
+
+:root {
+    --fontBody: 'Saira', sans-serif;
+    --fontMenu: 'Arimo', sans-serif;
+    --tamanhoh1: 5.5rem;
+    --tamanhoh2: 2.8rem;
+    --fontNormal: 0.93rem;
+    --fontPequena: 0.81rem;
+    --fontGrande: 1.4rem;
+  }
+*/
+
 .main {
-  font-family: "Poppins", sans-serif;
+  font-family:'Saira', sans-serif;
   font-weight: 300;
   font-size: 15px;
   line-height: 1.7;
-  color: #c4c3ca;
+  color: #ffffff90;
   background-size: cover;
   overflow-x: hidden;
+  background: #101010;
 }
+
 a {
   cursor: pointer;
   transition: all 200ms linear;
-}
-a:hover {
   text-decoration: none;
 }
+
 .link {
-  color: #c4c3ca;
+  color: #ffffff90;
 }
+
 .link:hover {
-  color: #6bacad;
+  color: #9dfd99;
 }
+
 p {
   font-weight: 500;
-  font-size: 14px;
+  font-size: 1rem;
   line-height: 1.7;
 }
+
 h4 {
   font-weight: 600;
 }
+
 h6 span {
-  padding: 0 20px;
+  padding: 0 50px;
   text-transform: uppercase;
   font-weight: 700;
+  text-align: center;
 }
+
 .section {
   position: relative;
   width: 100%;
   display: block;
 }
+
 .full-height {
   min-height: 100vh;
 }
+
 [type="checkbox"]:checked,
 [type="checkbox"]:not(:checked) {
   position: absolute;
   left: -9999px;
 }
+
 .checkbox:checked + label,
 .checkbox:not(:checked) + label {
   position: relative;
   display: block;
   text-align: center;
-  width: 60px;
-  height: 16px;
+  width: 100px;
+  height: 12px;
   border-radius: 8px;
   padding: 0;
-  margin: 10px auto;
+  margin: 2px auto;
   cursor: pointer;
-  background-color: #6bacad;
+  background-color: #9dfd99;
 }
+
 .checkbox:checked + label:before,
 .checkbox:not(:checked) + label:before {
   position: absolute;
   display: block;
-  width: 36px;
-  height: 36px;
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
-  color: #6bacad;
-  background-color: #062b35;
+  color: #fff;
+  background-color: #1d4e11;
   font-family: "unicons";
-  content: "⬉";
+  content: "⇖";
   z-index: 20;
   top: -10px;
   left: -10px;
-  line-height: 36px;
+  line-height: 30px;
   text-align: center;
-  font-size: 24px;
+  font-size: 20px;
   transition: all 0.5s ease;
 }
+
 .checkbox:checked + label:before {
-  transform: translateX(44px) rotate(-270deg);
+  transform: translateX(84px) rotate(-995deg);
 }
 
 .card-3d-wrap {
   position: relative;
   width: 440px;
   max-width: 100%;
-  height: 450px;
+  height: 490px;
   -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
   perspective: 800px;
-  margin-top: 60px;
+  margin-top: 20px;
 }
+
 .card-3d-wrapper {
   width: 100%;
   height: 100%;
@@ -106,17 +146,18 @@ h6 span {
   transform-style: preserve-3d;
   transition: all 600ms ease-out;
 }
+
 .card-front,
 .card-back {
   width: 100%;
   height: 100%;
-  background-color: #062b35;
+  background-color: #000;
   background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/pat.svg");
   background-position: bottom center;
   background-repeat: no-repeat;
   background-size: 300%;
   position: absolute;
-  border-radius: 6px;
+  border-radius: 20px;
   left: 0;
   top: 0;
   -webkit-transform-style: preserve-3d;
@@ -126,12 +167,15 @@ h6 span {
   -o-backface-visibility: hidden;
   backface-visibility: hidden;
 }
+
 .card-back {
   transform: rotateY(180deg);
 }
+
 .checkbox:checked ~ .card-3d-wrap .card-3d-wrapper {
   transform: rotateY(180deg);
 }
+
 .center-wrap {
   position: absolute;
   width: 100%;
@@ -149,10 +193,11 @@ h6 span {
   margin: 0;
   padding: 0;
 }
+
 .form-style {
   padding: 13px 20px;
   padding-left: 55px;
-  height: 48px;
+  height: 50px;
   width: 100%;
   font-weight: 500;
   border-radius: 4px;
@@ -160,19 +205,21 @@ h6 span {
   line-height: 22px;
   letter-spacing: 0.5px;
   outline: none;
-  color: #c4c3ca;
-  background-color: #1f2029;
+  color: #ffffff90;
+  background-color: #101010;
   border: none;
   -webkit-transition: all 200ms linear;
   transition: all 200ms linear;
   box-shadow: 0 4px 8px 0 rgba(21, 21, 21, 0.2);
 }
+
 .form-style:focus,
 .form-style:active {
   border: none;
   outline: none;
   box-shadow: 0 4px 8px 0 rgba(21, 21, 21, 0.2);
 }
+
 .input-icon {
   position: absolute;
   top: 0;
@@ -192,39 +239,46 @@ h6 span {
   -webkit-transition: all 200ms linear;
   transition: all 200ms linear;
 }
+
 .form-group input::-moz-placeholder {
   color: #c4c3ca;
   opacity: 0.7;
   -webkit-transition: all 200ms linear;
   transition: all 200ms linear;
 }
+
 .form-group input:-moz-placeholder {
   color: #c4c3ca;
   opacity: 0.7;
   -webkit-transition: all 200ms linear;
   transition: all 200ms linear;
 }
+
 .form-group input::-webkit-input-placeholder {
   color: #c4c3ca;
   opacity: 0.7;
   -webkit-transition: all 200ms linear;
   transition: all 200ms linear;
 }
+
 .form-group input:focus:-ms-input-placeholder {
   opacity: 0;
   -webkit-transition: all 200ms linear;
   transition: all 200ms linear;
 }
+
 .form-group input:focus::-moz-placeholder {
   opacity: 0;
   -webkit-transition: all 200ms linear;
   transition: all 200ms linear;
 }
+
 .form-group input:focus:-moz-placeholder {
   opacity: 0;
   -webkit-transition: all 200ms linear;
   transition: all 200ms linear;
 }
+
 .form-group input:focus::-webkit-input-placeholder {
   opacity: 0;
   -webkit-transition: all 200ms linear;
@@ -234,12 +288,13 @@ h6 span {
 .btn {
   border-radius: 4px;
   height: 44px;
-  font-size: 13px;
+  font-size: 1rem;
   font-weight: 600;
   text-transform: uppercase;
   -webkit-transition: all 200ms linear;
   transition: all 200ms linear;
-  padding: 0 30px;
+  padding: 0px 30px;
+  margin: 0 10px;
   letter-spacing: 1px;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -255,16 +310,18 @@ h6 span {
   -ms-flex-pack: center;
   text-align: center;
   border: none;
-  background-color: #6bacad;
-  color: #062b35;
+  background-color: #9dfd99;
+  color: #1d4e11;
   box-shadow: 0 8px 24px 0 rgba(6, 41, 46, 0.2);
 }
+
 .btn:active,
 .btn:focus {
-  background-color: #102770;
+  background-color: #1d4e11;
   color: #6bacad;
   box-shadow: 0 8px 24px 0 rgba(16, 39, 112, 0.2);
 }
+
 .btn:hover {
   background-color: #062b35;
   color: #6bacad;
@@ -279,6 +336,7 @@ h6 span {
   z-index: 100;
   transition: all 250ms linear;
 }
+
 .logo img {
   height: 26px;
   width: auto;
