@@ -14,6 +14,7 @@ const routes: Routes = [
   {path: 'getin', component: LoginRegisterComponent},
   {path: 'community', component: CommunityComponent}
 
+
 ];
 
 @NgModule({

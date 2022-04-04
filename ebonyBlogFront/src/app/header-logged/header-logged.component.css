@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Saira:wght@300&display=swap');
+
+a {
+  cursor: pointer;
+}
+
+.bg-dark {
+  background: #000 !important;
+}
+
+.mf {
+  color: #ffffff90;
+  font-size: 1.2rem;
+  font-family: 'Saira', sans-serif;
+}
+
+.mf:hover {
+  letter-spacing: 1px;
+  position: relative;
+  letter-spacing: 0.1em;
+  color: #9dfd99;
+}
+
+.mf:hover::after {
+  position: absolute;
+  content: "";
+  width: 1.5rem;
+  height: 0.1875rem;
+  left: 0.5rem;
+  top: 2.56rem;
+  background-color: #1d4e11;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  font-family: 'Saira', sans-serif;
+}
+
+.nav-item p {
+  margin-bottom: 0;
+}
+
+.nav-item .foto{
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  border: 1px solid #9dfd99;
+  box-shadow: 0 0 8px 1px #9dfd99;
+}
+
+.nav-item .nome {
+  font-size: 1.8rem;
+  padding-left: 10px;
+  font-weight: 900;
+  color: #ffffff90;
+}
+
+.nav-item .icone {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  width: 1.8rem;
+}

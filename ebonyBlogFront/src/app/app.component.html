@@ -1,2 +1,8 @@
-<app-header></app-header>
+<app-header *ngIf='auth.deslogado()'></app-header>
+<app-header-logged *ngIf='auth.logado()'></app-header-logged>
+
 <router-outlet></router-outlet>
+
+<app-footer *ngIf='auth.logado()'></app-footer>
+
+
