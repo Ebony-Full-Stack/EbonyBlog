@@ -22,7 +22,7 @@ export class LoginRegisterComponent implements OnInit {
     private router: Router
   ) { }
 
-  ngOnInit() {  // quando a página iniciar, faça isso...
+  ngOnInit() {  
     window.scroll(0, 0)
   }
 
@@ -44,8 +44,6 @@ export class LoginRegisterComponent implements OnInit {
       this.authService.cadastrar(this.user).subscribe((resp: User) => {
         this.user = resp
         this.router.navigate(['/getin'])
-        alert('Aeeee porra, senha correta, bora entrar!!!')
-
       })
     }
   }
@@ -69,7 +67,10 @@ export class LoginRegisterComponent implements OnInit {
     erro =>
     {
       if(erro.status == 500) {
-        alert('Einta, a senha e/ou email está zuado!')
+        alert('Einta, a senha e/ou email estão zuados!')
+      }
+      if(erro.status == 401) {
+        alert('Puta merda, deu ruim aqui... atualize pf!')
       }
     })
   }
